@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Patel | Software Engineer & ML Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- FIXED CANVAS BACKGROUND -->
+    <div id="canvas-container">
+        <canvas id="hero-lightpass"></canvas>
+    </div>
+
+    <!-- MAIN CONTENT LAYER -->
+    <main class="content-wrapper">
+        <!-- 1. NAVBAR -->
+        <nav class="navbar">
+            <div class="nav-brand">AP.</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </div>
+            <a href="#contact" class="btn-nav">Let's Connect</a>
+        </nav>
+
+        <!-- 2. HERO -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm Ayush.</p>
+                <h1 class="hero-title">Software Engineer <span class="text-accent">&</span><br> ML Builder</h1>
+                <p class="hero-subtitle">Computer Science student building production-ready software, machine learning systems, and intelligent applications.</p>
+                
+                <div class="hero-meta">
+                    <span>IIIT Guwahati</span>
+                    <span class="dot">•</span>
+                    <span>B.Tech CSE</span>
+                    <span class="dot">•</span>
+                    <span>9.57 CGPA</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <div class="social-links">
+                        <a href="https://github.com/ayush-patel624" target="_blank" title="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ayush-patel-8145a7323/" target="_blank" title="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REST OF PAGE (WITH GLASSMORPHISM OVERLAY) -->
+        <div class="page-background">
+            
+            <!-- 3. ABOUT -->
+            <section class="about section-padding" id="about">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">About Me</h2>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>I am deeply interested in <strong>Software Engineering, Machine Learning, Backend Systems, and AI</strong>. My focus is on building practical products that solve real-world problems. I build real software and ML systems, not just UI demos.</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <h3>9.57<span class="stat-small">/10</span></h3>
+                                <p>CGPA</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>Top 5</h3>
+                                <p>CSE Department</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>Top 3,000</h3>
+                                <p>among 134K+ Amazon ML Summer School applicants</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>AIR 71</h3>
+                                <p>Engineering Ring of Honour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. EXPERIENCE -->
+            <section class="experience section-padding" id="experience">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Experience</h2>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-meta">
+                                <span class="timeline-date">May 2026 – Jul 2026</span>
+                                <span class="timeline-location">Ropar, India</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-role">Summer Research Intern – Machine Learning</h3>
+                                <h4 class="timeline-company">Indian Institute of Technology (IIT) Ropar</h4>
+                                <p class="timeline-summary">Built a production-ready deepfake audio detection system (VoiceRadar) in PyTorch, achieving <strong>2.544% EER, 97.46% accuracy, and 0.9957 ROC-AUC</strong> on an 18,480-file cross-domain test split.</p>
+                                <ul class="timeline-highlights">
+                                    <li>Trained and benchmarked models across four speech corpora (ASVspoof5 Track 1, FakeOrReal, In-The-Wild, Kaggle Deepfake) to validate cross-domain generalization.</li>
+                                    <li>Engineered a physics-informed regularization module for vocal-tract acoustics, an attentive temporal pooling layer, and self-supervised speech backbones (WavLM-Large, HuBERT) to improve detection robustness.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jul 2026 – Aug 2026</span>
+                                <span class="timeline-location">Remote</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-role">Machine Learning Trainee</h3>
+                                <h4 class="timeline-company">Amazon ML Summer School</h4>
+                                <p class="timeline-summary">Completed an intensive curriculum on machine learning fundamentals and deep learning architectures led by Amazon ML engineers, covering supervised learning, neural networks, and model evaluation.</p>
+                                <ul class="timeline-highlights">
+                                    <li>Collaborating with top-ranked engineering students nationwide to solve applied, real-world machine learning problems in a peer-review-driven cohort.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. PROJECTS -->
+            <section class="projects section-padding" id="projects">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Selected Projects</h2>
+                    </div>
+                    
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-visual mental-health-visual">
+                                <!-- Dashboard mock -->
+                                <div class="mh-dashboard">
+                                    <div class="mh-header">Student Wellness Signal</div>
+                                    <div class="mh-body">
+                                        <div class="mh-stats">
+                                            <div class="mh-stat">
+                                                <span class="mh-label">Age</span>
+                                                <span class="mh-val">21</span>
+                                            </div>
+                                            <div class="mh-stat">
+                                                <span class="mh-label">Screen Time</span>
+                                                <span class="mh-val">6.5h</span>
+                                            </div>
+                                            <div class="mh-stat">
+                                                <span class="mh-label">Stress Level</span>
+                                                <span class="mh-val warning">High</span>
+                                            </div>
+                                        </div>
+                                        <div class="mh-result">
+                                            <div class="mh-score-circle">
+                                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                    <path class="circle" stroke-dasharray="74, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                </svg>
+                                                <div class="mh-score-text">
+                                                    <span class="score-main">7.4</span>
+                                                    <span class="score-sub">/10</span>
+                                                </div>
+                                            </div>
+                                            <div class="mh-status">Predicted Signal</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Mental Health Predictor</h3>
+                                <p class="project-desc">A machine learning product that predicts a continuous wellness score based on lifestyle, stress, and digital habits. Built on a dataset of 5,000 students across 13 behavioral factors.</p>
+                                <div class="project-tech">
+                                    <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Random Forest</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn-link">View Case Study →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-visual zivro-visual">
+                                <!-- Zivro UI mock -->
+                                <div class="zv-dashboard">
+                                    <div class="zv-left">
+                                        <div class="zv-brand">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00b4d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                            <span>Zivro</span>
+                                        </div>
+                                        <div class="zv-subtitle">HOME SERVICES, REIMAGINED</div>
+                                        <h3 class="zv-heading">Book trusted pros with <span class="zv-highlight">transparent</span> pricing.</h3>
+                                        <div class="zv-buttons">
+                                            <div class="zv-btn-primary">Browse services</div>
+                                            <div class="zv-btn-secondary">Create account</div>
+                                        </div>
+                                    </div>
+                                    <div class="zv-right">
+                                        <div class="zv-booking-card">
+                                            <div class="zv-card-header">
+                                                <span>Next booking</span>
+                                                <span class="zv-badge">PENDING</span>
+                                            </div>
+                                            <div class="zv-card-body">
+                                                <div class="zv-service-row">
+                                                    <span>Deep clean · 2 BR</span>
+                                                    <span>₹1,840</span>
+                                                </div>
+                                                <div class="zv-progress-bar">
+                                                    <div class="zv-progress-fill"></div>
+                                                </div>
+                                                <div class="zv-card-footer">Clean, fast bookings — from request to doorstep.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Zivro – AI Home Service Marketplace</h3>
+                                <p class="project-desc">Architected and built a backend RESTful API in Java 21 for an AI-assisted home service marketplace connecting customers with verified workers. Features dynamic pricing, JWT auth, and Razorpay integration.</p>
+                                <div class="project-tech">
+                                    <span>Java 21</span><span>Spring Boot</span><span>MySQL</span><span>Docker</span><span>Flyway</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/ayush-patel624" target="_blank" class="btn-link">View GitHub →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. SKILLS -->
+            <section class="skills section-padding" id="skills">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Technical Skills</h2>
+                    </div>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Programming</h3>
+                            <div class="skill-list">
+                                <span>Java</span><span>Python</span><span>C</span><span>SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend & APIs</h3>
+                            <div class="skill-list">
+                                <span>Spring Boot</span><span>Spring Security</span><span>Spring Data JPA</span><span>Hibernate</span><span>RESTful APIs</span><span>JWT</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Machine Learning</h3>
+                            <div class="skill-list">
+                                <span>PyTorch</span><span>Scikit-learn</span><span>XGBoost</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Databases & Tools</h3>
+                            <div class="skill-list">
+                                <span>MySQL</span><span>Flyway</span><span>Git</span><span>Docker</span><span>AWS</span><span>Postman</span><span>Maven</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. ACHIEVEMENTS & 8. EDUCATION -->
+            <section class="achievements-edu section-padding">
+                <div class="container two-col-layout">
+                    <div class="achievements" id="achievements">
+                        <div class="section-header">
+                            <h2 class="section-title">Achievements</h2>
+                        </div>
+                        <ul class="achievement-list">
+                            <li>
+                                <div class="achieve-title">9.57 CGPA</div>
+                                <div class="achieve-desc">Top 5 / 158 in CSE Department</div>
+                            </li>
+                            <li>
+                                <div class="achieve-title">Amazon ML Summer School 2026</div>
+                                <div class="achieve-desc">Selected from 134,000+ applicants to rank in the top 3,000</div>
+                            </li>
+                            <li>
+                                <div class="achieve-title">Engineering Ring of Honour 2025</div>
+                                <div class="achieve-desc">Ranked All India Rank (AIR) 71, awarded by naukri.com</div>
+                            </li>
+                            <li>
+                                <div class="achieve-title">AISSCE 2024 (CBSE XII)</div>
+                                <div class="achieve-desc">97.0%, Ranked in the top 1.5% of KVS students nationwide</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="education-leadership">
+                        <div class="education" id="education">
+                            <div class="section-header">
+                                <h2 class="section-title">Education</h2>
+                            </div>
+                            <div class="edu-item">
+                                <h3>IIIT Guwahati</h3>
+                                <p class="edu-degree">B.Tech Computer Science and Engineering</p>
+                                <p class="edu-date">2024 – Present</p>
+                                <p class="edu-grade">CGPA: 9.57 / 10.0</p>
+                            </div>
+                            <div class="edu-item">
+                                <h3>PM Shri Kendriya Vidyalaya, Shahdol</h3>
+                                <p class="edu-degree">XII: 97.0% | X: 98.2%</p>
+                                <p class="edu-date">2022 – 2024</p>
+                            </div>
+                        </div>
+
+                        <div class="leadership mt-4" id="leadership">
+                            <div class="section-header">
+                                <h2 class="section-title">Leadership</h2>
+                            </div>
+                            <div class="lead-item">
+                                <h3>Club Coordinator — BioSkoPien</h3>
+                                <p class="lead-date">Aug 2025 – May 2026</p>
+                                <p class="lead-desc">Led a 15-member team in planning and executing content development workshops.</p>
+                            </div>
+                            <div class="lead-item">
+                                <h3>PR Team Member — IIITG MUN</h3>
+                                <p class="lead-date">Jan 2025 – Mar 2025</p>
+                                <p class="lead-desc">Drove delegate acquisition through strategic outreach campaigns across multiple colleges.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 10. CONTACT / FOOTER -->
+            <footer class="contact-section section-padding" id="contact">
+                <div class="container">
+                    <div class="contact-card">
+                        <h2 class="contact-title">Let's build something meaningful.</h2>
+                        <p class="contact-desc">I am currently open for new opportunities and collaborations.</p>
+                        <div class="contact-links">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayushpatel.work624@gmail.com" target="_blank" class="btn btn-primary">Email Me</a>
+                            <a href="https://github.com/ayush-patel624" target="_blank" class="btn btn-outline">GitHub</a>
+                            <a href="https://www.linkedin.com/in/ayush-patel-8145a7323/" target="_blank" class="btn btn-outline">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 Ayush Patel. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
