@@ -6,7 +6,7 @@
   --text-muted: #a0a0ab;
   --accent-color: #ff5722; /* Vibrant Orange for a cinematic tech feel */
   --accent-hover: #ff7043;
-  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-bg: rgba(0, 0, 0, 0.4);
   --card-border: rgba(255, 255, 255, 0.08);
   
   --font-sans: 'Inter', -apple-system, sans-serif;
@@ -273,8 +273,9 @@ canvas {
 
 /* PAGE BACKGROUND OVERLAY FOR SECTIONS */
 .page-background {
-  background: transparent;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 150px, rgba(0,0,0,0.5) 100%);
   padding-bottom: 2rem;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.9), 0px 1px 3px rgba(0, 0, 0, 1);
 }
 
 /* SECTION HEADERS */
